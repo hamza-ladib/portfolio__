@@ -3,12 +3,12 @@
 <template>
   <div  class="font-jetBrains gap-4  w-full lg:h-fit flex flex-col  bg-[#14141a] text-white  text-lg font-light p-4">
     <div class="w-full ">
-      <Header/>
+      <Header @projectsScroll="goProjects"  @aboutScroll="goAbout"/>
     </div>
     
     <section class="s1 w-full lg:h-screen   flex-shrink-0  bg-[#2A2927] flex  lg:flex-row flex-col-reverse gap-2 items-center justify-center">
       <div class=" lg:w-1/2 w-full flex flex-col items-center justify-center gap-2 p-6 ">
-        <div class=" p-4  text-center text-5xl w-full  gap-2 relative ">About Hamza ladib <div class="pnt absolute top-0 left-full w-4 h-4 rounded-full bg-white"></div></div>
+        <div class=" p-4  text-center md:text-5xl text-xl w-full  gap-2 relative ">About Hamza ladib <div class="pnt absolute top-0 left-full w-4 h-4 rounded-full bg-white"></div></div>
         <div class=" px-4  text-center text-2xl w-full ">Web devoloper </div>
         <div class="intro translate-x-0 translate-y-0 md:px-6 px-2 text-sm  text-centerw-full p-4  ">Hey, I'm Hamza Ladib  👋 A "Creative Technologist." A software engineer with a strong creative side who bridges the gaps between product, design, and engineering. I've worked professionally in the web and  industry for 3+ years.</div>
       <div class="w-full  flex lg:flex-row flex-col gap-2 p-2 md:px-6 px-2 ">
@@ -47,11 +47,10 @@
         <div class="el1 w-full">
       <span class="uppercase font-bold">Introduction ✨</span>
       <div class="  w-full flex flex-col items-center justify-center gap-2 ">
-        <div class="endT  md:px-6 px-2   text-sm  text-center w-full p-4  ">Hey, I'm Hamza Ladib  👋 A "Creative Technologist." A software engineer with a strong creative side who bridges the gaps between product, design, and engineering. I've worked professionally in the web and  industry for 3+ years.</div>
-      <div class=" w-full    flex lg:flex-row flex-col gap-2 p-2 md:px-6 px-2 font-extralight text-sm ">
-        I bring together the worlds of software engineering and creative thinking, I have honed my skills as a software engineer with a strong creative side.
-Web development is my specialty,. I thrive on problem-solving and enjoy tackling complex challenges head-on. As a software engineering student with three years of practical experience, I'm constantly learning and expanding my knowledge to stay at the forefront of the ever-evolving tech landscape.
-Whether it's building innovative web applications or crafting immersive gaming experiences, I love using my technical expertise and creative mindset to bridge the gaps between product, design, and engineering.
+     <div class=" w-full    flex lg:flex-row flex-col gap-2 p-2 md:px-6 px-2 font-extralight text-sm ">
+        I bring together the worlds of software engineering and creative thinking,  I thrive on problem-solving and enjoy tackling complex challenges head-on. As a software engineering student with three years of practical experience, 
+        I'm constantly learning and expanding my knowledge to stay at the forefront of the ever-evolving tech landscape.
+Whether it's building innovative web applications, I love using my technical expertise and creative mindset to bridge the gaps between product, design, and engineering.
  </div>
  </div>
  <div class=" w-full  md:px-6 px-2">
@@ -90,7 +89,7 @@ Whether it's building innovative web applications or crafting immersive gaming e
  <div class="w-full  md:px-6 px-2">
   <div class=" text-base text-slate-500 font-bold">Preferred web stack:</div>
 
-<div class=" w-full flex flex-col gap-1 text-sm font-thin">
+<div class=" w-full flex flex-col gap-1 text-sm font-thin ">
   <div class="cursor-pointer group  py-1 w-36 flex gap-1">
     <svg class="hidden w-5 h-5 group-hover:flex fill-emerald-500  transition-all duration-300" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z"></path><path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"></path></svg>
     <svg class=" group-hover:hidden  transition-all duration-300 stroke-2  w-5 h-5 fill-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="fill-slate-600" d="m12 12.765 5.592-9.437h-3.276L12 7.33v.002L9.688 3.328h-3.28z"></path><path d="M18.461 3.332 12 14.235 5.539 3.332H1.992L12 20.672l10.008-17.34z"></path></svg>
@@ -210,12 +209,7 @@ tailwind css</div>
  
  </div>
  </div>
- <!------->
- <!------->
 </div>
-<!------->
-
-
       </div>
       <!-- <div class="w-2  bg-yellow-500"></div> -->
       <div class="w-80 menu  md:flex hidden flex-col gap-4 py-10 p-2">
@@ -233,45 +227,51 @@ tailwind css</div>
           A LITTLE OF 🙃</div>
       </div>
     </section>
-    <section class="introSection w-full   flex-shrink-0   md:p-4">
+    <section id='projsection' class="ProjSection w-full   flex-shrink-0   md:p-4">
      <div class="w-full ">
       <div class="w-full p-2 gap-2 text-center flex justify-center items-center "><div class=" flex-grow h-[2px] bg-white"></div>projects📌<div class=" flex-grow h-[2px] bg-white"></div></div>
       <div class="w-full flex  gap-8 ">
-         <div class="md:p-4 bg-[#2A2927] md:flex flex-col hidden  rounded-lg " >
-          <div class=" flex gap-1 items-center justify-start p-2 ">
-            
-            <svg class="w-4 h-4   fill-amber-300" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star-of-life</title> <path d="M28.75 21.918l-10.25-5.918 10.25-5.917c0.377-0.22 0.625-0.623 0.625-1.083 0-0.691-0.56-1.25-1.25-1.25-0.23 0-0.446 0.062-0.631 0.171l0.006-0.003-10.25 5.918v-11.835c0-0.69-0.56-1.25-1.25-1.25s-1.25 0.56-1.25 1.25v0 11.835l-10.249-5.918c-0.179-0.105-0.395-0.167-0.625-0.167-0.691 0-1.25 0.56-1.25 1.25 0 0.46 0.249 0.863 0.619 1.080l0.006 0.003 10.249 5.917-10.249 5.918c-0.381 0.219-0.633 0.623-0.633 1.087 0 0.69 0.559 1.25 1.25 1.25 0.234 0 0.452-0.064 0.639-0.176l-0.006 0.003 10.249-5.917v11.835c0 0.69 0.56 1.25 1.25 1.25s1.25-0.56 1.25-1.25v0-11.835l10.25 5.917c0.177 0.102 0.39 0.163 0.616 0.163 0.69 0 1.25-0.559 1.25-1.25 0-0.456-0.245-0.856-0.61-1.074l-0.006-0.003z"></path> </g></svg>
-            <svg class="w-4 h-4 stroke-amber-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 7.25004H18L18.77 4.18004C18.8177 3.98643 18.7866 3.78179 18.6835 3.61113C18.5803 3.44047 18.4136 3.31777 18.22 3.27004C18.0264 3.2223 17.8217 3.25342 17.6511 3.35657C17.4804 3.45971 17.3577 3.62643 17.31 3.82004L16.45 7.25004H10L10.77 4.18004C10.8177 3.98643 10.7866 3.78179 10.6835 3.61113C10.5803 3.44047 10.4136 3.31777 10.22 3.27004C10.0264 3.2223 9.82175 3.25342 9.65109 3.35657C9.48043 3.45971 9.35774 3.62643 9.31 3.82004L8.41 7.25004H5C4.80109 7.25004 4.61032 7.32905 4.46967 7.46971C4.32902 7.61036 4.25 7.80112 4.25 8.00004C4.25 8.19895 4.32902 8.38971 4.46967 8.53037C4.61032 8.67102 4.80109 8.75004 5 8.75004H8L6.37 15.25H3C2.80109 15.25 2.61032 15.3291 2.46967 15.4697C2.32902 15.6104 2.25 15.8011 2.25 16C2.25 16.1989 2.32902 16.3897 2.46967 16.5304C2.61032 16.671 2.80109 16.75 3 16.75H6L5.23 19.82C5.18226 20.0136 5.21339 20.2183 5.31653 20.3889C5.41968 20.5596 5.58639 20.6823 5.78 20.73C5.97361 20.7778 6.17825 20.7466 6.34891 20.6435C6.51957 20.5404 6.64226 20.3736 6.69 20.18L7.55 16.75H14L13.23 19.82C13.1823 20.0136 13.2134 20.2183 13.3165 20.3889C13.4197 20.5596 13.5864 20.6823 13.78 20.73C13.9736 20.7778 14.1783 20.7466 14.3489 20.6435C14.5196 20.5404 14.6423 20.3736 14.69 20.18L15.55 16.75H19C19.1989 16.75 19.3897 16.671 19.5303 16.5304C19.671 16.3897 19.75 16.1989 19.75 16C19.75 15.8011 19.671 15.6104 19.5303 15.4697C19.3897 15.3291 19.1989 15.25 19 15.25H16L17.63 8.75004H21C21.1989 8.75004 21.3897 8.67102 21.5303 8.53037C21.671 8.38971 21.75 8.19895 21.75 8.00004C21.75 7.80112 21.671 7.61036 21.5303 7.46971C21.3897 7.32905 21.1989 7.25004 21 7.25004ZM16 8.75004L14.37 15.25H8L9.63 8.75004H16Z" fill="#000000"></path> </g></svg>
-            web projects <span>(3)</span>
+         <div class="pt-10 md:p-4   md:flex flex-col hidden items-center  rounded-lg mena w-96" >
+          <div class="prj1 w-full  rounded-lg text-center text-sm flex gap-1 items-center justify-start p-2 cursor-pointer hover:translate-x-5 transition-all duration-300  ">
+<!--             <svg class="w-4 h-4   fill-amber-300" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star-of-life</title> <path d="M28.75 21.918l-10.25-5.918 10.25-5.917c0.377-0.22 0.625-0.623 0.625-1.083 0-0.691-0.56-1.25-1.25-1.25-0.23 0-0.446 0.062-0.631 0.171l0.006-0.003-10.25 5.918v-11.835c0-0.69-0.56-1.25-1.25-1.25s-1.25 0.56-1.25 1.25v0 11.835l-10.249-5.918c-0.179-0.105-0.395-0.167-0.625-0.167-0.691 0-1.25 0.56-1.25 1.25 0 0.46 0.249 0.863 0.619 1.080l0.006 0.003 10.249 5.917-10.249 5.918c-0.381 0.219-0.633 0.623-0.633 1.087 0 0.69 0.559 1.25 1.25 1.25 0.234 0 0.452-0.064 0.639-0.176l-0.006 0.003 10.249-5.917v11.835c0 0.69 0.56 1.25 1.25 1.25s1.25-0.56 1.25-1.25v0-11.835l10.25 5.917c0.177 0.102 0.39 0.163 0.616 0.163 0.69 0 1.25-0.559 1.25-1.25 0-0.456-0.245-0.856-0.61-1.074l-0.006-0.003z"></path> </g></svg>
+ -->            <svg class="w-4 h-4 stroke-amber-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 7.25004H18L18.77 4.18004C18.8177 3.98643 18.7866 3.78179 18.6835 3.61113C18.5803 3.44047 18.4136 3.31777 18.22 3.27004C18.0264 3.2223 17.8217 3.25342 17.6511 3.35657C17.4804 3.45971 17.3577 3.62643 17.31 3.82004L16.45 7.25004H10L10.77 4.18004C10.8177 3.98643 10.7866 3.78179 10.6835 3.61113C10.5803 3.44047 10.4136 3.31777 10.22 3.27004C10.0264 3.2223 9.82175 3.25342 9.65109 3.35657C9.48043 3.45971 9.35774 3.62643 9.31 3.82004L8.41 7.25004H5C4.80109 7.25004 4.61032 7.32905 4.46967 7.46971C4.32902 7.61036 4.25 7.80112 4.25 8.00004C4.25 8.19895 4.32902 8.38971 4.46967 8.53037C4.61032 8.67102 4.80109 8.75004 5 8.75004H8L6.37 15.25H3C2.80109 15.25 2.61032 15.3291 2.46967 15.4697C2.32902 15.6104 2.25 15.8011 2.25 16C2.25 16.1989 2.32902 16.3897 2.46967 16.5304C2.61032 16.671 2.80109 16.75 3 16.75H6L5.23 19.82C5.18226 20.0136 5.21339 20.2183 5.31653 20.3889C5.41968 20.5596 5.58639 20.6823 5.78 20.73C5.97361 20.7778 6.17825 20.7466 6.34891 20.6435C6.51957 20.5404 6.64226 20.3736 6.69 20.18L7.55 16.75H14L13.23 19.82C13.1823 20.0136 13.2134 20.2183 13.3165 20.3889C13.4197 20.5596 13.5864 20.6823 13.78 20.73C13.9736 20.7778 14.1783 20.7466 14.3489 20.6435C14.5196 20.5404 14.6423 20.3736 14.69 20.18L15.55 16.75H19C19.1989 16.75 19.3897 16.671 19.5303 16.5304C19.671 16.3897 19.75 16.1989 19.75 16C19.75 15.8011 19.671 15.6104 19.5303 15.4697C19.3897 15.3291 19.1989 15.25 19 15.25H16L17.63 8.75004H21C21.1989 8.75004 21.3897 8.67102 21.5303 8.53037C21.671 8.38971 21.75 8.19895 21.75 8.00004C21.75 7.80112 21.671 7.61036 21.5303 7.46971C21.3897 7.32905 21.1989 7.25004 21 7.25004ZM16 8.75004L14.37 15.25H8L9.63 8.75004H16Z" fill="#000000"></path> </g></svg>
+            web projects <span>({{projects.filter(x=>x.type=="WEB").length}})</span>
           </div>
-          <div class=" flex gap-1 items-center justify-start p-2">
+          <div class=" prj2 w-full  rounded-lg text-center text-sm flex gap-1 items-center justify-start p-2 cursor-pointer hover:translate-x-5 transition-all duration-300">
              
-            <svg class="w-4 h-4   fill-amber-300" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star-of-life</title> <path d="M28.75 21.918l-10.25-5.918 10.25-5.917c0.377-0.22 0.625-0.623 0.625-1.083 0-0.691-0.56-1.25-1.25-1.25-0.23 0-0.446 0.062-0.631 0.171l0.006-0.003-10.25 5.918v-11.835c0-0.69-0.56-1.25-1.25-1.25s-1.25 0.56-1.25 1.25v0 11.835l-10.249-5.918c-0.179-0.105-0.395-0.167-0.625-0.167-0.691 0-1.25 0.56-1.25 1.25 0 0.46 0.249 0.863 0.619 1.080l0.006 0.003 10.249 5.917-10.249 5.918c-0.381 0.219-0.633 0.623-0.633 1.087 0 0.69 0.559 1.25 1.25 1.25 0.234 0 0.452-0.064 0.639-0.176l-0.006 0.003 10.249-5.917v11.835c0 0.69 0.56 1.25 1.25 1.25s1.25-0.56 1.25-1.25v0-11.835l10.25 5.917c0.177 0.102 0.39 0.163 0.616 0.163 0.69 0 1.25-0.559 1.25-1.25 0-0.456-0.245-0.856-0.61-1.074l-0.006-0.003z"></path> </g></svg>
-            <svg class="w-4 h-4 stroke-amber-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 7.25004H18L18.77 4.18004C18.8177 3.98643 18.7866 3.78179 18.6835 3.61113C18.5803 3.44047 18.4136 3.31777 18.22 3.27004C18.0264 3.2223 17.8217 3.25342 17.6511 3.35657C17.4804 3.45971 17.3577 3.62643 17.31 3.82004L16.45 7.25004H10L10.77 4.18004C10.8177 3.98643 10.7866 3.78179 10.6835 3.61113C10.5803 3.44047 10.4136 3.31777 10.22 3.27004C10.0264 3.2223 9.82175 3.25342 9.65109 3.35657C9.48043 3.45971 9.35774 3.62643 9.31 3.82004L8.41 7.25004H5C4.80109 7.25004 4.61032 7.32905 4.46967 7.46971C4.32902 7.61036 4.25 7.80112 4.25 8.00004C4.25 8.19895 4.32902 8.38971 4.46967 8.53037C4.61032 8.67102 4.80109 8.75004 5 8.75004H8L6.37 15.25H3C2.80109 15.25 2.61032 15.3291 2.46967 15.4697C2.32902 15.6104 2.25 15.8011 2.25 16C2.25 16.1989 2.32902 16.3897 2.46967 16.5304C2.61032 16.671 2.80109 16.75 3 16.75H6L5.23 19.82C5.18226 20.0136 5.21339 20.2183 5.31653 20.3889C5.41968 20.5596 5.58639 20.6823 5.78 20.73C5.97361 20.7778 6.17825 20.7466 6.34891 20.6435C6.51957 20.5404 6.64226 20.3736 6.69 20.18L7.55 16.75H14L13.23 19.82C13.1823 20.0136 13.2134 20.2183 13.3165 20.3889C13.4197 20.5596 13.5864 20.6823 13.78 20.73C13.9736 20.7778 14.1783 20.7466 14.3489 20.6435C14.5196 20.5404 14.6423 20.3736 14.69 20.18L15.55 16.75H19C19.1989 16.75 19.3897 16.671 19.5303 16.5304C19.671 16.3897 19.75 16.1989 19.75 16C19.75 15.8011 19.671 15.6104 19.5303 15.4697C19.3897 15.3291 19.1989 15.25 19 15.25H16L17.63 8.75004H21C21.1989 8.75004 21.3897 8.67102 21.5303 8.53037C21.671 8.38971 21.75 8.19895 21.75 8.00004C21.75 7.80112 21.671 7.61036 21.5303 7.46971C21.3897 7.32905 21.1989 7.25004 21 7.25004ZM16 8.75004L14.37 15.25H8L9.63 8.75004H16Z" fill="#000000"></path> </g></svg>
-            web games <span>(3)</span>
+<!--             <svg class="w-4 h-4   fill-amber-300" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star-of-life</title> <path d="M28.75 21.918l-10.25-5.918 10.25-5.917c0.377-0.22 0.625-0.623 0.625-1.083 0-0.691-0.56-1.25-1.25-1.25-0.23 0-0.446 0.062-0.631 0.171l0.006-0.003-10.25 5.918v-11.835c0-0.69-0.56-1.25-1.25-1.25s-1.25 0.56-1.25 1.25v0 11.835l-10.249-5.918c-0.179-0.105-0.395-0.167-0.625-0.167-0.691 0-1.25 0.56-1.25 1.25 0 0.46 0.249 0.863 0.619 1.080l0.006 0.003 10.249 5.917-10.249 5.918c-0.381 0.219-0.633 0.623-0.633 1.087 0 0.69 0.559 1.25 1.25 1.25 0.234 0 0.452-0.064 0.639-0.176l-0.006 0.003 10.249-5.917v11.835c0 0.69 0.56 1.25 1.25 1.25s1.25-0.56 1.25-1.25v0-11.835l10.25 5.917c0.177 0.102 0.39 0.163 0.616 0.163 0.69 0 1.25-0.559 1.25-1.25 0-0.456-0.245-0.856-0.61-1.074l-0.006-0.003z"></path> </g></svg>
+ -->            <svg class="w-4 h-4 stroke-amber-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 7.25004H18L18.77 4.18004C18.8177 3.98643 18.7866 3.78179 18.6835 3.61113C18.5803 3.44047 18.4136 3.31777 18.22 3.27004C18.0264 3.2223 17.8217 3.25342 17.6511 3.35657C17.4804 3.45971 17.3577 3.62643 17.31 3.82004L16.45 7.25004H10L10.77 4.18004C10.8177 3.98643 10.7866 3.78179 10.6835 3.61113C10.5803 3.44047 10.4136 3.31777 10.22 3.27004C10.0264 3.2223 9.82175 3.25342 9.65109 3.35657C9.48043 3.45971 9.35774 3.62643 9.31 3.82004L8.41 7.25004H5C4.80109 7.25004 4.61032 7.32905 4.46967 7.46971C4.32902 7.61036 4.25 7.80112 4.25 8.00004C4.25 8.19895 4.32902 8.38971 4.46967 8.53037C4.61032 8.67102 4.80109 8.75004 5 8.75004H8L6.37 15.25H3C2.80109 15.25 2.61032 15.3291 2.46967 15.4697C2.32902 15.6104 2.25 15.8011 2.25 16C2.25 16.1989 2.32902 16.3897 2.46967 16.5304C2.61032 16.671 2.80109 16.75 3 16.75H6L5.23 19.82C5.18226 20.0136 5.21339 20.2183 5.31653 20.3889C5.41968 20.5596 5.58639 20.6823 5.78 20.73C5.97361 20.7778 6.17825 20.7466 6.34891 20.6435C6.51957 20.5404 6.64226 20.3736 6.69 20.18L7.55 16.75H14L13.23 19.82C13.1823 20.0136 13.2134 20.2183 13.3165 20.3889C13.4197 20.5596 13.5864 20.6823 13.78 20.73C13.9736 20.7778 14.1783 20.7466 14.3489 20.6435C14.5196 20.5404 14.6423 20.3736 14.69 20.18L15.55 16.75H19C19.1989 16.75 19.3897 16.671 19.5303 16.5304C19.671 16.3897 19.75 16.1989 19.75 16C19.75 15.8011 19.671 15.6104 19.5303 15.4697C19.3897 15.3291 19.1989 15.25 19 15.25H16L17.63 8.75004H21C21.1989 8.75004 21.3897 8.67102 21.5303 8.53037C21.671 8.38971 21.75 8.19895 21.75 8.00004C21.75 7.80112 21.671 7.61036 21.5303 7.46971C21.3897 7.32905 21.1989 7.25004 21 7.25004ZM16 8.75004L14.37 15.25H8L9.63 8.75004H16Z" fill="#000000"></path> </g></svg>
+            web games <span>({{projects.filter(x=>x.type=="WEB GAMES").length}})</span>
           </div>
-          <div class=" flex gap-1 items-center justify-start p-2">
-            <svg class="w-4 h-4   fill-amber-300" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star-of-life</title> <path d="M28.75 21.918l-10.25-5.918 10.25-5.917c0.377-0.22 0.625-0.623 0.625-1.083 0-0.691-0.56-1.25-1.25-1.25-0.23 0-0.446 0.062-0.631 0.171l0.006-0.003-10.25 5.918v-11.835c0-0.69-0.56-1.25-1.25-1.25s-1.25 0.56-1.25 1.25v0 11.835l-10.249-5.918c-0.179-0.105-0.395-0.167-0.625-0.167-0.691 0-1.25 0.56-1.25 1.25 0 0.46 0.249 0.863 0.619 1.080l0.006 0.003 10.249 5.917-10.249 5.918c-0.381 0.219-0.633 0.623-0.633 1.087 0 0.69 0.559 1.25 1.25 1.25 0.234 0 0.452-0.064 0.639-0.176l-0.006 0.003 10.249-5.917v11.835c0 0.69 0.56 1.25 1.25 1.25s1.25-0.56 1.25-1.25v0-11.835l10.25 5.917c0.177 0.102 0.39 0.163 0.616 0.163 0.69 0 1.25-0.559 1.25-1.25 0-0.456-0.245-0.856-0.61-1.074l-0.006-0.003z"></path> </g></svg>
-            <svg class="w-4 h-4 stroke-amber-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 7.25004H18L18.77 4.18004C18.8177 3.98643 18.7866 3.78179 18.6835 3.61113C18.5803 3.44047 18.4136 3.31777 18.22 3.27004C18.0264 3.2223 17.8217 3.25342 17.6511 3.35657C17.4804 3.45971 17.3577 3.62643 17.31 3.82004L16.45 7.25004H10L10.77 4.18004C10.8177 3.98643 10.7866 3.78179 10.6835 3.61113C10.5803 3.44047 10.4136 3.31777 10.22 3.27004C10.0264 3.2223 9.82175 3.25342 9.65109 3.35657C9.48043 3.45971 9.35774 3.62643 9.31 3.82004L8.41 7.25004H5C4.80109 7.25004 4.61032 7.32905 4.46967 7.46971C4.32902 7.61036 4.25 7.80112 4.25 8.00004C4.25 8.19895 4.32902 8.38971 4.46967 8.53037C4.61032 8.67102 4.80109 8.75004 5 8.75004H8L6.37 15.25H3C2.80109 15.25 2.61032 15.3291 2.46967 15.4697C2.32902 15.6104 2.25 15.8011 2.25 16C2.25 16.1989 2.32902 16.3897 2.46967 16.5304C2.61032 16.671 2.80109 16.75 3 16.75H6L5.23 19.82C5.18226 20.0136 5.21339 20.2183 5.31653 20.3889C5.41968 20.5596 5.58639 20.6823 5.78 20.73C5.97361 20.7778 6.17825 20.7466 6.34891 20.6435C6.51957 20.5404 6.64226 20.3736 6.69 20.18L7.55 16.75H14L13.23 19.82C13.1823 20.0136 13.2134 20.2183 13.3165 20.3889C13.4197 20.5596 13.5864 20.6823 13.78 20.73C13.9736 20.7778 14.1783 20.7466 14.3489 20.6435C14.5196 20.5404 14.6423 20.3736 14.69 20.18L15.55 16.75H19C19.1989 16.75 19.3897 16.671 19.5303 16.5304C19.671 16.3897 19.75 16.1989 19.75 16C19.75 15.8011 19.671 15.6104 19.5303 15.4697C19.3897 15.3291 19.1989 15.25 19 15.25H16L17.63 8.75004H21C21.1989 8.75004 21.3897 8.67102 21.5303 8.53037C21.671 8.38971 21.75 8.19895 21.75 8.00004C21.75 7.80112 21.671 7.61036 21.5303 7.46971C21.3897 7.32905 21.1989 7.25004 21 7.25004ZM16 8.75004L14.37 15.25H8L9.63 8.75004H16Z" fill="#000000"></path> </g></svg>
-            problem solving <span>(3)</span>
+          <div class=" prj3 w-full  rounded-lg text-center text-sm flex gap-1 items-center justify-start p-2 cursor-pointer hover:translate-x-5 transition-all duration-300">
+<!--             <svg class="w-4 h-4   fill-amber-300" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star-of-life</title> <path d="M28.75 21.918l-10.25-5.918 10.25-5.917c0.377-0.22 0.625-0.623 0.625-1.083 0-0.691-0.56-1.25-1.25-1.25-0.23 0-0.446 0.062-0.631 0.171l0.006-0.003-10.25 5.918v-11.835c0-0.69-0.56-1.25-1.25-1.25s-1.25 0.56-1.25 1.25v0 11.835l-10.249-5.918c-0.179-0.105-0.395-0.167-0.625-0.167-0.691 0-1.25 0.56-1.25 1.25 0 0.46 0.249 0.863 0.619 1.080l0.006 0.003 10.249 5.917-10.249 5.918c-0.381 0.219-0.633 0.623-0.633 1.087 0 0.69 0.559 1.25 1.25 1.25 0.234 0 0.452-0.064 0.639-0.176l-0.006 0.003 10.249-5.917v11.835c0 0.69 0.56 1.25 1.25 1.25s1.25-0.56 1.25-1.25v0-11.835l10.25 5.917c0.177 0.102 0.39 0.163 0.616 0.163 0.69 0 1.25-0.559 1.25-1.25 0-0.456-0.245-0.856-0.61-1.074l-0.006-0.003z"></path> </g></svg>
+ -->            <svg class="w-4 h-4 stroke-amber-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 7.25004H18L18.77 4.18004C18.8177 3.98643 18.7866 3.78179 18.6835 3.61113C18.5803 3.44047 18.4136 3.31777 18.22 3.27004C18.0264 3.2223 17.8217 3.25342 17.6511 3.35657C17.4804 3.45971 17.3577 3.62643 17.31 3.82004L16.45 7.25004H10L10.77 4.18004C10.8177 3.98643 10.7866 3.78179 10.6835 3.61113C10.5803 3.44047 10.4136 3.31777 10.22 3.27004C10.0264 3.2223 9.82175 3.25342 9.65109 3.35657C9.48043 3.45971 9.35774 3.62643 9.31 3.82004L8.41 7.25004H5C4.80109 7.25004 4.61032 7.32905 4.46967 7.46971C4.32902 7.61036 4.25 7.80112 4.25 8.00004C4.25 8.19895 4.32902 8.38971 4.46967 8.53037C4.61032 8.67102 4.80109 8.75004 5 8.75004H8L6.37 15.25H3C2.80109 15.25 2.61032 15.3291 2.46967 15.4697C2.32902 15.6104 2.25 15.8011 2.25 16C2.25 16.1989 2.32902 16.3897 2.46967 16.5304C2.61032 16.671 2.80109 16.75 3 16.75H6L5.23 19.82C5.18226 20.0136 5.21339 20.2183 5.31653 20.3889C5.41968 20.5596 5.58639 20.6823 5.78 20.73C5.97361 20.7778 6.17825 20.7466 6.34891 20.6435C6.51957 20.5404 6.64226 20.3736 6.69 20.18L7.55 16.75H14L13.23 19.82C13.1823 20.0136 13.2134 20.2183 13.3165 20.3889C13.4197 20.5596 13.5864 20.6823 13.78 20.73C13.9736 20.7778 14.1783 20.7466 14.3489 20.6435C14.5196 20.5404 14.6423 20.3736 14.69 20.18L15.55 16.75H19C19.1989 16.75 19.3897 16.671 19.5303 16.5304C19.671 16.3897 19.75 16.1989 19.75 16C19.75 15.8011 19.671 15.6104 19.5303 15.4697C19.3897 15.3291 19.1989 15.25 19 15.25H16L17.63 8.75004H21C21.1989 8.75004 21.3897 8.67102 21.5303 8.53037C21.671 8.38971 21.75 8.19895 21.75 8.00004C21.75 7.80112 21.671 7.61036 21.5303 7.46971C21.3897 7.32905 21.1989 7.25004 21 7.25004ZM16 8.75004L14.37 15.25H8L9.63 8.75004H16Z" fill="#000000"></path> </g></svg>
+            problem solving <span>({{projects.filter(x=>x.type=="PROBLEM SOLVING").length}})</span>
           </div>
          </div>
-         <div class=" flex-grow  flex flex-col gap-5 justify-center items-center " >
-          <div v-for="pr in projects" class=" bg-[#2A2927]  flex flex-col gap-2 md:w-[500px] w-[400px] p-4 rounded-lg text-xs font-extrathin">
+         <div class=" flex-grow  flex  flex-col gap-5   py-2  justify-center items-center  " >
+          <div v-for="(pr,i) in projects"  class="bg-[#2A2927] prj  flex flex-col gap-2 md:w-[500px] w-full p-4 rounded-lg text-xs font-extrathin">
             <div class="w-full p-2  flex gap-5 justify-start  items-center text-xs font-thin ">
               <div class="p-2 bg-stone-500 rounded-lg">{{pr.type}}</div>
-              <div class="p-2 bg-stone-500 rounded-lg">{{pr.date}}</div>
+              <div class="p-2 bg-stone-500 rounded-lg">{{pr.date}}</div>  
             </div>
-            <div class=" flex flex-col gap-2 w-full  items-center ">
+            <!---V--->
+
+            <!---V--->
+            <div  v-if="pr.type!=='PROBLEM SOLVING'" class=" flex flex-col gap-2 w-full  items-center ">
               <div class="text-lg">{{pr.name}}</div>
               <div class="text-gray-300">{{pr.description}}</div>
             </div>
+            <!---Y-->
+            <div v-else  class=" flex flex-col gap-2 w-full  items-center ">
+                <img class="rounded-lg shadow-lg" src="./assets/lc.jpg"/>
+            </div>
+            <!---Y-->
             <div class="w-full  flex flex-wrap justify-start items-center p-2 gap-2">
                <div v-for="tech in pr.technologies" class="p-2 hover:translate-x-1 transition-all duration-500 bg-cyan-700 rounded-lg">{{ tech }}</div>
             </div>
             <div class="w-full  p-2 flex items-center gap-5 ">
-
-              <a :href="pr.code" target="blank">
+              <a v-if="projects[i].type!=='PROBLEM SOLVING'" :href="pr.code" target="blank">
                 <div class="p-2 cursor-pointer bg-amber-300 rounded-lg w-fit flex gap-2 items-center justify-center">
                 code
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -279,31 +279,56 @@ tailwind css</div>
                 </svg>
                 </div>
               </a>
-         
-              <div class="p-2 cursor-pointer bg-indigo-300 rounded-lg w-fit flex gap-2 items-center justify*center">
+              <div v-if="projects[i].type!=='PROBLEM SOLVING'" class="p-2 cursor-pointer bg-indigo-300 rounded-lg w-fit flex gap-2 items-center justify*center">
               simple demo 
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
   <path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
 </svg>
-
-              
               </div>
+              <a v-if="projects[i].type=='PROBLEM SOLVING'" :href="pr.code" target="blank">
+              <div  class="p-2 cursor-pointer bg-orange-300 rounded-lg w-fit flex gap-2 items-center justify*center">
+              LEET CODE 
+              <svg class="fill-yellow-500 w-6 h-6" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>LeetCode icon</title><path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039zM20.811 13.01H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z"></path></g></svg>
 
-
-
-
+              </div>
+              </a>
             </div>
+            <!---x--->
+
+            <!---x--->
            
             </div>
-
+            <!------>
+            
+            <!------->
          </div>
       </div>
     
  </div>
+    </section>
+    <!----sect contact -->
+    <section id='projsection' class="ProjSection w-full   flex-shrink-0   md:p-4">
+     <div class="w-full ">
+      <div class="w-full p-2 gap-2 text-center flex justify-center items-center "><div class=" flex-grow h-[2px] bg-white"></div>contact 📢<div class=" flex-grow h-[2px] bg-white"></div></div>
+      <div class="w-full flex  gap-8 ">
+        
+            <!---x--->
+
+            <!---x--->
+           
+            </div>
+            <!------>
+            
+            <!------->
+         </div>
+      
 
     </section>
 
-  
+
+
+
+    <!----sect contact -->
   </div>
  
 </template>
@@ -311,8 +336,10 @@ tailwind css</div>
 import Header from './components/header.vue' 
 import { onMounted,ref } from 'vue';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger)
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin';
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 let loaded=ref(false);
 let projects= ref (
   [
@@ -378,14 +405,34 @@ let projects= ref (
   video:'',
   technologies:['p5js','javascript'],
 },
+  { 
+  type: 'PROBLEM SOLVING',
+  date:'LEET CODE',
+  name:"LEET CODE",
+  description:" solving over 540 problem in leet code using  JavaScript.",
+  code:'https://leetcode.com/hamza_ladib/',
+  video:'',
+ /*  technologies:['javascript'], */
+},
 ])
+
+let goProjects=()=>{
+  gsap.to(window, {
+    duration: 1,
+    scrollTo:'#projsection'  
+  });
+}
+let goAbout=()=>{
+  gsap.to(window, {
+    duration: 1,
+    scrollTo:'.introSection'  
+  });
+}
 onMounted(()=>{
- /*  ScrollTrigger.refresh() */
+ 
+  ScrollTrigger.refresh()
   loaded.value=true;
-
-
-
-/* gsap.to(".svg",1,{
+gsap.to(".svg",1,{
   xPercent:10,  
   yPercent:40,
   ease: "power1.inOut",
@@ -397,16 +444,28 @@ onMounted(()=>{
     amount: 1.5,
    
   }
-}) */
-/* ScrollTrigger.create({
+})
+ScrollTrigger.create({
   trigger: ".menu",
-  start: "top top",
-  end :"bottom 30%",
+  start: "top 50%",
+  end :"bottom bottom",
      pin: true, 
      scrub:0.3,
-    markers: true  
-}); */
-/* for(let i=1;i<5;i++){
+   /*  markers: true */  
+});
+gsap.timeline({
+    // yes, we can add it to an entire timeline!
+    scrollTrigger: {
+      trigger: ".mena",
+      pin: true,   // pin the trigger element while active
+      start: "top 50%",
+     end :"bottom 30%",
+     scrub:0.3,
+    /* markers: true */   
+}
+}
+)
+ for(let i=1;i<5;i++){
   let sv='.sv'+i;
   let d='.d'+i;
   let el='.el'+i;
@@ -416,27 +475,72 @@ gsap.to(sv, {
       start: 'top center',
       end: 'bottom center',
       onEnter: () => {
-        document.querySelectorAll(sv)[0].classList.add('stroke-red-500');
+        document.querySelectorAll(sv)[0].classList.add('stroke-green-500');
         document.querySelectorAll(d)[0].classList.add('translate-x-5');
-        console.log("enter")
+        
       },
       onLeave: () => {
-        document.querySelectorAll(sv)[0].classList.remove('stroke-red-500');
+        document.querySelectorAll(sv)[0].classList.remove('stroke-green-500');
         document.querySelectorAll(d)[0].classList.remove('translate-x-5');
-        console.log("leave")
+        
       },
       onEnterBack: () => {
-        document.querySelectorAll(sv)[0].classList.add('stroke-red-500');
+        document.querySelectorAll(sv)[0].classList.add('stroke-green-500');
         document.querySelectorAll(d)[0].classList.add('translate-x-5');
       },
       onLeaveBack: () => {
-        document.querySelectorAll(sv)[0].classList.remove('stroke-red-500');
+        document.querySelectorAll(sv)[0].classList.remove('stroke-green-500');
         document.querySelectorAll(d)[0].classList.remove('translate-x-5');
       },
     },
   });
-  } */
-})
+  }   
+  /**** */
+  let prj= document.querySelectorAll('.prj');
+  
+  for(let i=0;i<prj.length;i++){
+  let p=prj[i];
+  let elem;
+  if( projects.value[i].type=='WEB')
+  elem='.prj1'
+  else if(projects.value[i].type=='WEB GAMES')
+  elem='.prj2'
+  else if(projects.value[i].type=='PROBLEM SOLVING')
+  elem='.prj3'
+  
+gsap.to(p, {
+    scrollTrigger: {
+      trigger: p,
+      start: 'top bottom',
+      end: 'bottom bottom',
+     /*  markers:true, */
+      onEnter: () => {
+       /*  document.querySelectorAll(sv)[0].classList.add('stroke-green-500'); */
+        document.querySelectorAll(elem)[0].classList.add('translate-x-5');
+        document.querySelectorAll(elem)[0].classList.add('bg-[#2A2927]');
+
+      },
+      onLeave: () => {
+        /* document.querySelectorAll(sv)[0].classList.remove('stroke-green-500'); */
+        document.querySelectorAll(elem)[0].classList.remove('translate-x-5');
+        document.querySelectorAll(elem)[0].classList.remove('bg-[#2A2927]');
+
+      },
+      onEnterBack: () => {
+        /* document.querySelectorAll(sv)[0].classList.add('stroke-green-500'); */
+        document.querySelectorAll(elem)[0].classList.add('translate-x-5');
+        document.querySelectorAll(elem)[0].classList.add('bg-[#2A2927]');
+      },
+      onLeaveBack: () => {
+       /*  document.querySelectorAll(sv)[0].classList.remove('stroke-green-500'); */
+        document.querySelectorAll(elem)[0].classList.remove('translate-x-5');
+        document.querySelectorAll(elem)[0].classList.remove('bg-[#2A2927]');
+      },
+    },
+  });
+  } 
+  /**** */
+})  
 
 /* gsap.to(".pnt",0.3,{
   scrollTrigger: {
